@@ -8,7 +8,7 @@ const session = require("express-session");
 const MongoDBStore = require("connect-mongodb-session")(session);
 const csrf = require("csurf");
 const flash = require("connect-flash");
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 5000;
 const errorController = require("./controllers/error");
 const User = require("./models/user");
 
